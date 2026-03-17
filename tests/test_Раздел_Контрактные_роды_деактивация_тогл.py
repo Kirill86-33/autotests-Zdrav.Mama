@@ -1,7 +1,8 @@
-import pytest
+from testit_python_commons.decorators import externalId, displayName
 
 class TestToglPage:
-    
+    @externalId("test_select_togl")
+    @displayName("Выбор тогла (спецпредложение)")
     def test_select_togl(self, button_togl):  
         button_togl.open()
         button_togl.click_togl()

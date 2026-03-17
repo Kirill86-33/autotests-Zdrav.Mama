@@ -1,6 +1,8 @@
-import pytest
+from testit_python_commons.decorators import externalId, displayName
 
 class TestLeaveForm:
+    @externalId("test_leave_form")
+    @displayName("Форма 'Родить в Подмосковье'")
     def test_leave_form(self, leave_page):
         """Тест формы 'Родить в Подмосковье'"""
         leave_page.open()

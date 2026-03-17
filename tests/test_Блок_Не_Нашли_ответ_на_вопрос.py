@@ -1,6 +1,8 @@
-import pytest
+from testit_python_commons.decorators import externalId, displayName
 
 class TestNotFoundAnswerForm:
+    @externalId("test_not_found_answer_form")
+    @displayName("Форма 'Не нашли ответ'")
     def test_not_found_answer_form(self, input_not_found_answer):
         input_not_found_answer.open()
         input_not_found_answer.enter_name("ТЕСТ ТЕСТ")

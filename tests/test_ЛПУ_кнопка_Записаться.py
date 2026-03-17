@@ -1,6 +1,8 @@
-import pytest
+from testit_python_commons.decorators import externalId, displayName
 
 class TestRegisterForm:
+    @externalId("test_register_form")
+    @displayName("Форма регистрации")
     def test_register_form(self, register_page):# register_page - это название созданной фикстуры и используется в тесте
         """Тест формы 'Родить в Подмосковье'"""
         register_page.open()

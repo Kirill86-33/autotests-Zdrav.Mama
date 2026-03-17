@@ -1,6 +1,8 @@
-
+from testit_python_commons.decorators import externalId, displayName
 
 class TestBirthForm:
+    @externalId("test_birth_form")
+    @displayName("Форма рождения")
     def test_birth_form(self, birth_page):
         birth_page.open()
         birth_page.enter_name("ТЕСТ ТЕСТ")
