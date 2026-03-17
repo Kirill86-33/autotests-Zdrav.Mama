@@ -1,12 +1,19 @@
-# Virtual environment
+@"
+# Виртуальное окружение
 .venv/
 venv/
 ENV/
+env/
 
-# Python cache
+# Файлы с секретами
+set_env.ps1
+connection_config.ini
+*.ini
+
+# Кэш Python и временные файлы
 __pycache__/
 *.pyc
-
-# IDE
-.vscode/
-.idea/
+.pytest_cache/
+*.log
+build/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
