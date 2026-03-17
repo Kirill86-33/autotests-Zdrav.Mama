@@ -17,3 +17,4 @@ __pycache__/
 *.log
 build/
 "@ | Out-File -FilePath .gitignore -Encoding utf8
+.vscode/
